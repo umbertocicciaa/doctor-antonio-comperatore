@@ -1,16 +1,72 @@
-# React + Vite
+# Doctor Antonio Comperatore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal website built with React + Vite.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Node.js](https://nodejs.org/) (v18 or later)
+- npm (comes with Node.js)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Install dependencies
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Run the development server
+
+```bash
+npm run dev
+```
+
+The site will be available at **http://localhost:5173** (Vite's default port). Changes to the source files will hot-reload automatically.
+
+### 3. Lint the code
+
+```bash
+npm run lint
+```
+
+### 4. Run the tests
+
+```bash
+npm test
+```
+
+To run in watch mode (re-runs on file changes):
+
+```bash
+npm run test:watch
+```
+
+To run with a coverage report:
+
+```bash
+npm run test:coverage
+```
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+The output will be in the `dist/` folder.
+
+### 6. Preview the production build locally
+
+```bash
+npm run preview
+```
+
+This serves the `dist/` folder on a local static server so you can verify the production build before deploying.
+
+### 7. Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+This runs the build first (`predeploy`), then publishes the `dist/` folder via `gh-pages`.
