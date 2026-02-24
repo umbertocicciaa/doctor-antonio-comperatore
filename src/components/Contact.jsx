@@ -93,6 +93,7 @@ export default function Contact() {
       <footer className="contact__footer">
         <p>© {new Date().getFullYear()} Dr. Antonio Comperatore — Ecografista · Scuola SIUMB</p>
         <p className="contact__footer-note">P.IVA / Codice Fiscale disponibile su richiesta</p>
+        <p className="contact__footer-note">Made From Umberto Domenico Ciccia</p>
       </footer>
     </section>
   );
