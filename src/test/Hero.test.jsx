@@ -50,7 +50,7 @@ describe('Hero', () => {
 
   it('renders studio location', () => {
     render(<Hero />);
-    expect(screen.getByText(/Studio a Cittanova/)).toBeInTheDocument();
+    expect(screen.getByText(/Studio a Locri/)).toBeInTheDocument();
   });
 
   it('scrolls to contatti when "Prenota una visita" button is clicked', () => {
