@@ -22,9 +22,9 @@ describe('About', () => {
     expect(screen.getByText(/Esperienza e Precisione/)).toBeInTheDocument();
   });
 
-  it('renders about lead paragraph mentioning hospital', () => {
+  it('renders about lead paragraph mentioning location', () => {
     render(<About />);
-    const matches = screen.getAllByText(/Ospedale/);
+    const matches = screen.getAllByText(/Via/);
     expect(matches.length).toBeGreaterThan(0);
   });
 
@@ -40,14 +40,14 @@ describe('About', () => {
     expect(scuolaElements.length).toBeGreaterThan(0);
   });
 
-  it('renders hospital badge', () => {
+  it('renders location badge', () => {
     render(<About />);
-    expect(screen.getByText('Ospedale Cotugno dei Colli')).toBeInTheDocument();
+    expect(screen.getByText('Via \"Inserire Via\"')).toBeInTheDocument();
   });
 
-  it('renders Napoli text', () => {
+  it('renders Locri text', () => {
     render(<About />);
-    expect(screen.getByText('Napoli')).toBeInTheDocument();
+    expect(screen.getByText('Locri')).toBeInTheDocument();
   });
 
   it('renders experience badge', () => {

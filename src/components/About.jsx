@@ -23,9 +23,7 @@ export default function About() {
             className={`about__text${textVisible ? ' animate-in-left' : ''}`}
           >
             <p className="about__lead">
-              Medico specializzato in diagnostica ecografica con una lunga esperienza clinica maturata
-              presso l&apos;Ospedale <strong>&quot;Cotugno&quot; dei Colli di Napoli</strong>, uno dei centri
-              ospedalieri di riferimento del Sud Italia.
+              Medico specializzato in diagnostica ecografica con una lunga esperienza clinica maturata nel Sud Italia.
             </p>
 
             <p>
@@ -61,8 +59,8 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <strong>Ospedale Cotugno dei Colli</strong>
-                  <span>Napoli</span>
+                  <strong>Via "Inserire Via"</strong>
+                  <span>Locri</span>
                 </div>
               </div>
 
