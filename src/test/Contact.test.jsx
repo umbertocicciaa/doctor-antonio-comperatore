@@ -57,16 +57,6 @@ describe('Contact', () => {
     expect(screen.getByText('Locri (RC)')).toBeInTheDocument();
   });
 
-  it('renders Ospedale contact card', () => {
-    render(<Contact />);
-    expect(screen.getByText('Ospedale')).toBeInTheDocument();
-  });
-
-  it('renders hospital name', () => {
-    render(<Contact />);
-    expect(screen.getByText('Ospedale "Cotugno" dei Colli')).toBeInTheDocument();
-  });
-
   it('renders Orari contact card', () => {
     render(<Contact />);
     expect(screen.getByText('Orari')).toBeInTheDocument();
@@ -87,10 +77,10 @@ describe('Contact', () => {
     expect(screen.getByText(/Formazione specialistica/)).toBeInTheDocument();
   });
 
-  it('renders exactly 4 contact cards', () => {
+  it('renders exactly 3 contact cards', () => {
     render(<Contact />);
     const cards = document.querySelectorAll('.contact-card');
-    expect(cards).toHaveLength(4);
+    expect(cards).toHaveLength(3);
   });
 
   it('renders footer with current year', () => {
@@ -115,7 +105,6 @@ describe('Contact', () => {
     expect(cards[0].style.transitionDelay).toBe('0s');
     expect(cards[1].style.transitionDelay).toBe('0.12s');
     expect(cards[2].style.transitionDelay).toBe('0.24s');
-    expect(cards[3].style.transitionDelay).toBe('0.36s');
   });
 
   it('renders contact grid', () => {
