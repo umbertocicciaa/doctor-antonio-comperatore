@@ -52,7 +52,7 @@ export default function Hero() {
 
         <p className="hero__tagline">
           Diagnosi ecografica di alta precisione <br className="hero__br" />
-          a Napoli e dintorni
+          a Locri e dintorni
         </p>
 
         <div className="hero__actions">
