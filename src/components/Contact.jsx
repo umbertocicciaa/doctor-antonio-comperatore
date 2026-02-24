@@ -24,8 +24,8 @@ export default function Contact() {
         </svg>
       ),
       label: 'Studio Medico',
-      value: 'Via F. Brunelleschi 18',
-      note: 'Cittanova (RC)',
+      value: 'Via "Inserire Via"',
+      note: 'Locri (RC)',
     },
     {
       icon: (

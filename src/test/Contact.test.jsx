@@ -49,12 +49,12 @@ describe('Contact', () => {
 
   it('renders studio address', () => {
     render(<Contact />);
-    expect(screen.getByText('Via F. Brunelleschi 18')).toBeInTheDocument();
+    expect(screen.getByText('Via \"Inserire Via\"')).toBeInTheDocument();
   });
 
-  it('renders Cittanova RC note', () => {
+  it('renders Locri RC note', () => {
     render(<Contact />);
-    expect(screen.getByText('Cittanova (RC)')).toBeInTheDocument();
+    expect(screen.getByText('Locri (RC)')).toBeInTheDocument();
   });
 
   it('renders Ospedale contact card', () => {
