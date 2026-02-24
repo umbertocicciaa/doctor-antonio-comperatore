@@ -43,9 +43,9 @@ describe('Hero', () => {
     expect(screen.getByText('Scopri le prestazioni')).toBeInTheDocument();
   });
 
-  it('renders hospital affiliation', () => {
+  it('renders location affiliation', () => {
     render(<Hero />);
-    expect(screen.getByText(/Ospedale Cotugno dei Colli/)).toBeInTheDocument();
+    expect(screen.getByText(/Via.*Inserire Via/)).toBeInTheDocument();
   });
 
   it('renders studio location', () => {
@@ -87,9 +87,9 @@ describe('Hero', () => {
     expect(() => fireEvent.click(screen.getByText('Scopri le prestazioni'))).not.toThrow();
   });
 
-  it('renders Napoli location text', () => {
+  it('renders Locri location text', () => {
     render(<Hero />);
-    const matches = screen.getAllByText(/Napoli/);
+    const matches = screen.getAllByText(/Locri/);
     expect(matches.length).toBeGreaterThan(0);
   });
 });
