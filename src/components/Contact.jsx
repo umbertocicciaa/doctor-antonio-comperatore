@@ -13,7 +13,7 @@ export default function Contact() {
         </svg>
       ),
       label: 'Telefono',
-      value: '[telephone-number]',
+      value: '[Numero di telefono]',
       note: 'Per informazioni e prenotazioni',
     },
     {
@@ -61,7 +61,7 @@ export default function Contact() {
           <span className="section-label contact__label">Contatti</span>
           <h2 className="section-title contact__title">Dove Trovarci</h2>
           <p className="contact__subtitle">
-            Prenota la tua visita o richiedi informazioni — siamo a tua disposizione
+            Prenota la tua visita o richiedi informazioni — sono a tua disposizione
           </p>
         </div>
 

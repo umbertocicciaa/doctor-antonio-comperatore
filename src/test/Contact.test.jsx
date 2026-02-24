@@ -34,7 +34,7 @@ describe('Contact', () => {
 
   it('renders telephone number placeholder', () => {
     render(<Contact />);
-    expect(screen.getByText('[telephone-number]')).toBeInTheDocument();
+    expect(screen.getByText('[Numero di telefono]')).toBeInTheDocument();
   });
 
   it('renders telephone note', () => {
