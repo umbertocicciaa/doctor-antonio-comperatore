@@ -51,7 +51,7 @@ export default function Hero() {
         <p className="hero__specialty">Ecografista &nbsp;·&nbsp; Specialista in Diagnostica ad Ultrasuoni</p>
 
         <p className="hero__tagline">
-          Diagnosi ecografica di alta precisione<br className="hero__br" />
+          Diagnosi ecografica di alta precisione <br className="hero__br" />
           a Napoli e dintorni
         </p>
 
