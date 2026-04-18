@@ -34,7 +34,7 @@ describe('Contact', () => {
 
   it('renders telephone number placeholder', () => {
     render(<Contact />);
-    expect(screen.getByText('[Numero di telefono]')).toBeInTheDocument();
+    expect(screen.getByText('3286549511')).toBeInTheDocument();
   });
 
   it('renders telephone note', () => {
@@ -49,7 +49,7 @@ describe('Contact', () => {
 
   it('renders studio address', () => {
     render(<Contact />);
-    expect(screen.getByText('Via \"Inserire Via\"')).toBeInTheDocument();
+    expect(screen.getByText('Via Cilea 23')).toBeInTheDocument();
   });
 
   it('renders Locri RC note', () => {

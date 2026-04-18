@@ -13,7 +13,7 @@ export default function Contact() {
         </svg>
       ),
       label: 'Telefono',
-      value: '[Numero di telefono]',
+      value: '3286549511',
       note: 'Per informazioni e prenotazioni',
     },
     {
@@ -24,7 +24,7 @@ export default function Contact() {
         </svg>
       ),
       label: 'Studio Medico',
-      value: 'Via "Inserire Via"',
+      value: 'Via Cilea 23',
       note: 'Locri (RC)',
     },
     {

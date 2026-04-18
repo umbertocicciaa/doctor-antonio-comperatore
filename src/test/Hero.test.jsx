@@ -45,7 +45,7 @@ describe('Hero', () => {
 
   it('renders location affiliation', () => {
     render(<Hero />);
-    expect(screen.getByText(/Via.*Inserire Via/)).toBeInTheDocument();
+    expect(screen.getByText(/Via Cilea 23, Locri/)).toBeInTheDocument();
   });
 
   it('renders studio location', () => {

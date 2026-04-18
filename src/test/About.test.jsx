@@ -42,7 +42,7 @@ describe('About', () => {
 
   it('renders location badge', () => {
     render(<About />);
-    expect(screen.getByText('Via \"Inserire Via\"')).toBeInTheDocument();
+    expect(screen.getByText('Via Cilea 23')).toBeInTheDocument();
   });
 
   it('renders Locri text', () => {

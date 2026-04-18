@@ -59,7 +59,7 @@ export default function About() {
                   </svg>
                 </div>
                 <div>
-                  <strong>Via "Inserire Via"</strong>
+                  <strong>Via Cilea 23</strong>
                   <span>Locri</span>
                 </div>
               </div>
