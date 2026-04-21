@@ -62,11 +62,3 @@ npm run preview
 ```
 
 This serves the `dist/` folder on a local static server so you can verify the production build before deploying.
-
-### 7. Deploy to GitHub Pages
-
-```bash
-npm run deploy
-```
-
-This runs the build first (`predeploy`), then publishes the `dist/` folder via `gh-pages`.
