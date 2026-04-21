@@ -9,7 +9,6 @@ on:
       - main
 
 permissions:
-  contents: read
   actions: read
   pages: write
   id-token: write
@@ -19,18 +18,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  approval:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-
-    steps:
-      - name: Await manual approval
-        run: echo "Deployment approved. Proceeding to GitHub Pages."
-
   deploy:
-    needs: approval
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     environment:
