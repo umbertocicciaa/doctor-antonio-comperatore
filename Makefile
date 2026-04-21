@@ -14,8 +14,6 @@ help:
 	@echo "  test           Run tests once"
 	@echo "  test-watch     Run tests in watch mode"
 	@echo "  test-coverage  Run tests with coverage"
-	@echo "  predeploy      Build before deploy"
-	@echo "  deploy         Deploy dist to GitHub Pages"
 	@echo "  clean          Remove build and coverage artifacts"
 	@echo "  all            Lint, test, and build"
 
@@ -42,12 +40,6 @@ test-watch:
 
 test-coverage:
 	$(NPM) run test:coverage
-
-predeploy:
-	$(NPM) run predeploy
-
-deploy:
-	$(NPM) run deploy
 
 clean:
 	rm -rf dist coverage
