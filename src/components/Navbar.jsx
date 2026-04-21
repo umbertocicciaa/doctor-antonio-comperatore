@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="navbar__container">
         <button className="navbar__brand" onClick={() => scrollTo('hero')}>
           <span className="navbar__brand-title">Dr. Antonio Comperatore</span>
-          <span className="navbar__brand-subtitle">Ecografista</span>
+          <span className="navbar__brand-subtitle">Medico — Ecografista</span>
         </button>
 
         <button

@@ -34,27 +34,27 @@ describe('Contact', () => {
 
   it('renders telephone number placeholder', () => {
     render(<Contact />);
-    expect(screen.getByText('3286549511')).toBeInTheDocument();
+    expect(screen.getByText('+39 328 654 9511')).toBeInTheDocument();
   });
 
   it('renders telephone note', () => {
     render(<Contact />);
-    expect(screen.getByText('Per informazioni e prenotazioni')).toBeInTheDocument();
+    expect(screen.getByText('Disponibile per prenotazioni')).toBeInTheDocument();
   });
 
-  it('renders Studio Medico contact card', () => {
+  it('renders Indirizzo contact card', () => {
     render(<Contact />);
-    expect(screen.getByText('Studio Medico')).toBeInTheDocument();
+    expect(screen.getByText('Indirizzo')).toBeInTheDocument();
   });
 
   it('renders studio address', () => {
     render(<Contact />);
-    expect(screen.getByText('Via Cilea 23')).toBeInTheDocument();
+    expect(screen.getByText('Via Cilea 23, Locri (RC)')).toBeInTheDocument();
   });
 
-  it('renders Locri RC note', () => {
+  it('renders studio address note', () => {
     render(<Contact />);
-    expect(screen.getByText('Locri (RC)')).toBeInTheDocument();
+    expect(screen.getByText('Studio medico moderno e attrezzato')).toBeInTheDocument();
   });
 
   it('renders Orari contact card', () => {
@@ -64,7 +64,22 @@ describe('Contact', () => {
 
   it('renders appointment note', () => {
     render(<Contact />);
+    expect(screen.getByText(/Contattami per verificare/)).toBeInTheDocument();
+  });
+
+  it('renders appointment value', () => {
+    render(<Contact />);
     expect(screen.getByText('Su appuntamento')).toBeInTheDocument();
+  });
+
+  it('renders Esperienza contact card', () => {
+    render(<Contact />);
+    expect(screen.getByText('Esperienza')).toBeInTheDocument();
+  });
+
+  it('renders experience value', () => {
+    render(<Contact />);
+    expect(screen.getByText('Ecografista Certificato')).toBeInTheDocument();
   });
 
   it('renders SIUMB CTA card', () => {
@@ -77,10 +92,10 @@ describe('Contact', () => {
     expect(screen.getByText(/Formazione specialistica/)).toBeInTheDocument();
   });
 
-  it('renders exactly 3 contact cards', () => {
+  it('renders exactly 4 contact cards', () => {
     render(<Contact />);
     const cards = document.querySelectorAll('.contact-card');
-    expect(cards).toHaveLength(3);
+    expect(cards).toHaveLength(4);
   });
 
   it('renders footer with current year', () => {
@@ -105,6 +120,7 @@ describe('Contact', () => {
     expect(cards[0].style.transitionDelay).toBe('0s');
     expect(cards[1].style.transitionDelay).toBe('0.12s');
     expect(cards[2].style.transitionDelay).toBe('0.24s');
+    expect(cards[3].style.transitionDelay).toBe('0.36s');
   });
 
   it('renders contact grid', () => {

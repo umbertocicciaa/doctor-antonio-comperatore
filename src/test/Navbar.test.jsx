@@ -24,7 +24,7 @@ describe('Navbar', () => {
 
   it('renders brand subtitle', () => {
     render(<Navbar />);
-    expect(screen.getByText('Ecografista')).toBeInTheDocument();
+    expect(screen.getByText('Medico — Ecografista')).toBeInTheDocument();
   });
 
   it('renders all navigation links', () => {

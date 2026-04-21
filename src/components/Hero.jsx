@@ -48,7 +48,7 @@ export default function Hero() {
           <span className="hero__title-accent">Comperatore</span>
         </h1>
 
-        <p className="hero__specialty">Ecografista &nbsp;·&nbsp; Specialista in Diagnostica ad Ultrasuoni</p>
+        <p className="hero__specialty">Medico — Ecografista &nbsp;·&nbsp; Specialista in Diagnostica ad Ultrasuoni</p>
 
         <p className="hero__tagline">
           Diagnosi ecografica di alta precisione <br className="hero__br" />
